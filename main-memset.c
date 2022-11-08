@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   main-memset.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/01 23:01:13 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/07 17:02:07 by mamaral-         ###   ########.fr       */
+/*   Created: 2022/11/03 09:10:28 by mamaral-          #+#    #+#             */
+/*   Updated: 2022/11/08 13:40:15 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "stdio.h"
+#include <string.h>
 
-int	ft_strncmp(const char *s1, char *s2, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	while (*s1 != '\0' && *s1 == *s2 && n > 0)
+	char	*p;
+
+	p = (char *)s;
+	while (n > 0)
 	{
-		s1++;
-		s2++;
+		p[n - 1] = c;
 		n--;
 	}
-	if (n == 0)
-		return (0);
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	return (s);
+}
+
+int	main(void)
+{
+	char	*str;
+
+	str = strdup("5M6þ6Ç!Ö7i3C&^_SOF2*!a");
+	printf("Before memset => %s", str);
+	ft_memset(str + 6, 'x', 10);
+	printf("\nAfter memset => %s\n", str);
+	return (0);
 }

@@ -6,23 +6,39 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 09:10:28 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/07 13:21:08 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/08 14:11:14 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
+#include "libft.h"
+#include "stdio.h"
+#include <string.h>
 
-int	ft_isalpha(int c)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	char	*p;
+
+	p = (char *)s;
+	while (n > 0)
+	{
+		p[n - 1] = c;
+		n--;
+	}
+	return (s);
+}
+
+void	ft_bzero(void *s, size_t n)
+{
+	ft_memset(s, 0, n);
 }
 
 int	main(void)
 {
-	int	i;
+	char	*str;
 
-	i = 'P';
-	printf("%d\n", ft_isalpha(i));
+	str = strdup("5M6þ6Ç!Ö7i3C&^_SOF2*!a");
+	printf("Before memset => %s", str);
+	ft_bzero(str + 2, 5);
+	printf("\nAfter memset => %s\n", str);
 	return (0);
 }
