@@ -6,14 +6,13 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:42:31 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/09 15:03:29 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/15 16:30:34 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*
-	strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	j;

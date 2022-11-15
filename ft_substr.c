@@ -1,39 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main-memset.c                                      :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/03 09:10:28 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/08 13:40:15 by mamaral-         ###   ########.fr       */
+/*   Created: 2022/11/15 16:46:29 by mamaral-          #+#    #+#             */
+/*   Updated: 2022/11/15 18:10:22 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "stdio.h"
-#include <string.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*p;
+	unsigned int	i;
+	char			*c;
 
-	p = (char *)s;
-	while (n > 0)
+	i = 0;
+	if (!s)
+		return (NULL);
+	c = ft_strnew(len);
+	if (!c)
+		return (NULL);
+	if (s)
 	{
-		p[n - 1] = c;
-		n--;
+		while (i != len)
+		{
+			c[i] = s[start + i];
+			i++;
+		}
 	}
-	return (s);
-}
-
-int	main(void)
-{
-	char	*str;
-
-	str = strdup("5M6þ6Ç!Ö7i3C&^_SOF2*!a");
-	printf("Before memset => %s", str);
-	ft_memset(str + 6, 'x', 10);
-	printf("\nAfter memset => %s\n", str);
-	return (0);
+	c[len] = '\0';
+	return (c);
 }

@@ -1,23 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/03 11:52:41 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/15 16:07:36 by mamaral-         ###   ########.fr       */
+/*   Created: 2022/11/15 16:46:25 by mamaral-          #+#    #+#             */
+/*   Updated: 2022/11/15 16:49:33 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	x;
-
-	x = 0;
-	while (s[x] != '\0')
-		x++;
-	return (x);
-}
+char *ft_strtrim(char const *s1, char const *set);
