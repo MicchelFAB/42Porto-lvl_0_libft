@@ -1,34 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/09 15:52:35 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/15 15:22:57 by mamaral-         ###   ########.fr       */
+/*   Created: 2022/11/15 14:18:58 by mamaral-          #+#    #+#             */
+/*   Updated: 2022/11/15 14:53:57 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+char	*ft_strdup(const char *s)
 {
-	int	res;
-	int	sign;
+	char	*src;
+	int		i;
 
-	res = 0;
-	sign = 1;
-	while (*str == 32 || (*str >= 9 && *str <= 13))
-		str++;
-	if (*str == '-')
-		sign *= -1;
-	if (*str == '-' || *str == '+')
-		str++;
-	while (*str >= '0' && *str <= '9')
-	{
-		res = res * 10 + *str - '0';
-		str++;
-	}
-	return (res * sign);
+	i = 0;
+	src = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (!src)
+		return (NULL);
+	while (*s)
+		src[i++] = *s++;
+	src[i] = '\0';
+	return (src);
 }

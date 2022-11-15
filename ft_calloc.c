@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/09 15:52:35 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/15 15:22:57 by mamaral-         ###   ########.fr       */
+/*   Created: 2022/11/15 10:47:20 by mamaral-          #+#    #+#             */
+/*   Updated: 2022/11/15 12:10:43 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	int	res;
-	int	sign;
+	char	*ptr;
+	size_t	i;
 
-	res = 0;
-	sign = 1;
-	while (*str == 32 || (*str >= 9 && *str <= 13))
-		str++;
-	if (*str == '-')
-		sign *= -1;
-	if (*str == '-' || *str == '+')
-		str++;
-	while (*str >= '0' && *str <= '9')
+	i = 0;
+	ptr = malloc(nmemb * size);
+	if (ptr == NULL)
+		return (0);
+	while (i < nmemb * size)
 	{
-		res = res * 10 + *str - '0';
-		str++;
+		ptr[i] = 0;
+		i++;
 	}
-	return (res * sign);
+	return (ptr);
 }
