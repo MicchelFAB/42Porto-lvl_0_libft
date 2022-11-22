@@ -6,7 +6,7 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:55:26 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/09 14:01:46 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/21 09:57:52 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s)
+	while (*s != '\0')
 	{
-		if (*s == c)
+		if ((char)*s == (char)c)
 			return ((char *)s);
 		s++;
 	}
-	if (c == '\0')
+	if (c == 0)
 		return ((char *)s);
-	return (0);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 16:46:29 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/15 18:41:48 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/21 15:00:45 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	j;
 	char	*str;
 
+	if (!s)
+		return (NULL);
 	str = (char *)malloc(sizeof(*s) * (len + 1));
 	if (!str)
 		return (NULL);

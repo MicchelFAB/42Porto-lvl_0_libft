@@ -6,7 +6,7 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:18:03 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/09 14:23:56 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/21 10:31:36 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int		i;
+	unsigned int	i;
+	char			*ptr;
 
-	i = ft_strlen(s);
-	if (c == 0)
-		return ((char *)s + i);
-	while (i >= 0)
+	ptr = NULL;
+	i = 0;
+	while (s[i])
 	{
-		if (s[i] == c)
-			return ((char *)s + i);
-		i--;
+		if (s[i] == (char)c)
+			ptr = (char *)&s[i];
+		i++;
 	}
-	return (NULL);
+	if ((char)c == s[i])
+		return ((char *)&s[i]);
+	return (ptr);
 }
