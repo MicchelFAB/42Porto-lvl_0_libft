@@ -6,10 +6,11 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 16:44:23 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/16 18:25:37 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/22 15:25:36 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// o nome é uma abreviatura de int to alphanumeric) que receba um inteiro n e devolva a string decimal que represente n.
 #include "libft.h"
 
 size_t	ft_nb_len(int nb)

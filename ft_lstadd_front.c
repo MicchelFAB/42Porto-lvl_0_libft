@@ -6,9 +6,11 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 09:38:32 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/17 17:30:38 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/22 16:00:09 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Adiciona ponteiro ao inicio da lista
 
 #include "libft.h"
 

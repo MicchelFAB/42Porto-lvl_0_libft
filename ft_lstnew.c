@@ -6,9 +6,11 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 09:37:36 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/17 14:45:35 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/22 15:58:21 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Aloca memoria para a criacao de uma lista ligada
 
 #include "libft.h"
 

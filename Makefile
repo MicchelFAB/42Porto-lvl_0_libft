@@ -6,7 +6,7 @@
 #    By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/15 15:13:34 by mamaral-          #+#    #+#              #
-#    Updated: 2022/11/17 19:18:19 by mamaral-         ###   ########.fr        #
+#    Updated: 2022/11/22 15:00:53 by mamaral-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,3 @@ fclean:		clean
 			${RM} *.a
 
 re:			fclean all
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(B_SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS) $(B_OBJS)
