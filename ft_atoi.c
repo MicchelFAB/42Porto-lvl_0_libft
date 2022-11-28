@@ -22,15 +22,15 @@ int	ft_atoi(const char *nptr)				//create ft_atoi function
 	if (!nptr)						//check if nptr is valid
 		return (0);
 	while (*nptr == 32 || (*nptr >= 9 && *nptr <= 13))	//delimitate spaces, tabs and new lines
-		nptr++;					//increment pointer
+		nptr++;						//increment pointer
 	if (*nptr == '-')					//check if string has a sign negative
 		sinal *= -1;					// set sign to positive
 	if (*nptr == '-' || *nptr == '+')			//check if string has a sign
-		nptr++;					//increment pointer
+		nptr++;						//increment pointer
 	while (*nptr >= '0' && *nptr <= '9')			//check if string has a number
 	{
 		res = res * 10 + *nptr - '0';			//set result to the number
-		nptr++;					//increment pointer
+		nptr++;						//increment pointer
 	}
 	return (res * sinal);					//return result
 }
