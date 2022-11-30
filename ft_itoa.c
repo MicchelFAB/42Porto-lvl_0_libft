@@ -6,16 +6,16 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 16:44:23 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/28 19:05:22 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/29 10:04:10 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //discover the size of the string	-	LN 23 //
 //create int variable				-	LN 25 //
-//define len as 0					-	LN 27 //
+//define len (length) as 0			-	LN 27 //
 //if nb is negative or 0			-	LN 28 //
-//increase len by 1					-	LN 29 //
+//increase len (length) by 1		-	LN 29 //
 //while nb is not 0					-	LN 30 //
 //increase len by 1					-	LN 32 //
 //divide nb by 10					-	LN 33 //
