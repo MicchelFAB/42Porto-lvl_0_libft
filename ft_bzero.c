@@ -6,14 +6,13 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:02:10 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/28 18:00:16 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/12/23 16:19:20 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//create ft_bzero function									-	LN 16 //
-//define ft_memset function with NULL character as value	-	LN 18 //
-void	ft_bzero(void *s, size_t n)
+//function: ft_bzero
+void	ft_bzero(void *s, size_t n) // Set n bytes of s to 0
 {
-	ft_memset(s, '\0', n);
+	ft_memset(s, '\0', n); // Use ft_memset to set n bytes of s to 0
 }

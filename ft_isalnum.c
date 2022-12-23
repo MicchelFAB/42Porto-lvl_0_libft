@@ -6,17 +6,15 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 09:36:51 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/28 18:05:09 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/12/23 16:23:03 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//create ft_isalnum function		-	LN 17 //
-//check if c is a digit or a letter	-	LN 19 //
+// Function: ft_isalnum
 int	ft_isalnum(int c)
 {
-	if (ft_isalpha(c) || ft_isdigit(c))
-		return (1);
-	return (0);
+	if (ft_isalpha(c) || ft_isdigit(c)) // If c is a letter or a digit
+		return (1); // Return 1
+	return (0); // Else return 0
 }

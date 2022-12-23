@@ -6,23 +6,21 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 09:39:02 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/22 15:59:02 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/12/23 17:28:17 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Marca o tamanho da lista
-
 #include "libft.h"
-
-int	ft_lstsize(t_list *lst)
+// Function: ft_lstsize
+int	ft_lstsize(t_list *lst) // Counts the number of elements in a list.
 {
-	int	size;
+	int	size; // Create int size
 
-	size = 0;
-	while (lst != NULL)
+	size = 0; // Set size to 0
+	while (lst != NULL) // While lst is not NULL
 	{
-		lst = lst->next;
-		size++;
+		lst = lst->next; // Set lst to lst->next
+		size++; // Increment size
 	}
-	return (size);
+	return (size); // Return size
 }

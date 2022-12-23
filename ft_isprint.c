@@ -6,16 +6,15 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 11:26:00 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/28 18:42:46 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/12/23 16:25:42 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//create ft_isprint function				-	LN 16 //
-//check if c is a printable character		-	LN 18 //
-int	ft_isprint(int c)
+// Function: ft_isprint
+int	ft_isprint(int c) // Check if c is a printable character
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+	if (c >= 32 && c <= 126) // If c is between 32 and 126 (space and ~)
+		return (1); // Return 1
+	return (0);	// Else return 0
 }
