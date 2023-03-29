@@ -6,19 +6,19 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 09:38:46 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/12/23 17:23:52 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/17 18:39:10 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// Function: ft_lstiter
-void	ft_lstiter(t_list *lst, void (*f)(void*)) // Iterates the list ’lst’ and applies the function ’f’ to the content of each element.
+
+void	ft_lstiter(t_list *lst, void (*f)(void*))
 {
-	if (lst == NULL || f == NULL) // If lst or f are NULL
-		return ; // Return
-	while (lst) // While lst is not NULL
+	if (lst == NULL || f == NULL)
+		return ;
+	while (lst)
 	{
-		f(lst->content); // Apply the function ’f’ to the content of each element
-		lst = lst->next; // Set lst to lst->next
+		f(lst->content);
+		lst = lst->next;
 	}
 }

@@ -6,16 +6,16 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 09:38:32 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/12/23 17:20:27 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/17 17:30:38 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// Function: ft_lstadd_front
-void	ft_lstadd_front(t_list **lst, t_list *new) // Add new element to the beginning of the list
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (lst == NULL || new == NULL) // If lst or new are NULL
+	if (lst == NULL || new == NULL)
 		return ;
-	new->next = *lst; // Set new->next to lst
-	*lst = new; // Set lst to new
+	new->next = *lst;
+	*lst = new;
 }

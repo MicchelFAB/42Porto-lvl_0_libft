@@ -6,17 +6,17 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 09:38:53 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/12/23 17:25:45 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/17 17:53:47 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// Function: ft_lstlast
-t_list	*ft_lstlast(t_list *lst) // Returns the last element of the list.
+
+t_list	*ft_lstlast(t_list *lst)
 {
-	if (lst == NULL) // If lst is NULL
-		return (NULL); // Return NULL
-	while (lst->next != NULL) // While lst->next is not NULL
-		lst = lst->next; // Set lst to lst->next
-	return (lst); // Return lst
+	if (lst == NULL)
+		return (NULL);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }

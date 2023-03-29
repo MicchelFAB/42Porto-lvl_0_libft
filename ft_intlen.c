@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_intlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/09 14:31:26 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/09 14:32:22 by mamaral-         ###   ########.fr       */
+/*   Created: 2023/03/29 10:41:29 by mamaral-          #+#    #+#             */
+/*   Updated: 2023/03/29 11:51:33 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+size_t	ft_intlen(int *s)
 {
-	unsigned char	*str;
-	size_t			i;
+	size_t	x;
 
-	str = (unsigned char *)s;
-	i = 0;
-	while (n > i)
-	{
-		if (str[i] == (unsigned char)c)
-			return (&str[i]);
-		i++;
-	}
-	return (NULL);
+	x = 0;
+	while (s[x])
+		x++;
+	return (x);
 }

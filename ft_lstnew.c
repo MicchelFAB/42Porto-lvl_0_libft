@@ -6,22 +6,22 @@
 /*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 09:37:36 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/12/23 17:28:00 by mamaral-         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:45:35 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// Function: ft_lstnew
-t_list	*ft_lstnew(void *content) // Allocates and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL.
-{
-	t_list	*new; // Create new element
 
-	new = (t_list *)malloc(sizeof(t_list)); // Allocate memory for new element
-	if (!(new)) // If new is NULL
+t_list	*ft_lstnew(void *content)
+{
+	t_list	*new;
+
+	new = (t_list *)malloc(sizeof(t_list));
+	if (!(new))
 	{
-		return (NULL); // Return NULL
+		return (NULL);
 	}
-	new->next = NULL; // Set new->next to NULL
-	new->content = content; // Set new->content to content
-	return (new); // Return new
+	new->next = NULL;
+	new->content = content;
+	return (new);
 }	
