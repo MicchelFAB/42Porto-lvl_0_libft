@@ -6,13 +6,13 @@
 #    By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/15 15:13:34 by mamaral-          #+#    #+#              #
-#    Updated: 2023/03/29 10:45:52 by mamaral-         ###   ########.fr        #
+#    Updated: 2023/03/29 15:16:59 by mamaral-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libft.a
 CC			= cc
-CFLAGS		= -Wall -Wextra -Werror
+CFLAGS		= -Wall -Wextra -Werror -g
 AR			= ar rc
 RM			= rm -rf
 
