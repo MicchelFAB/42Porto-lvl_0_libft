@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mamaral- <mamaral-@student.42porto.com     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:53:51 by mamaral-          #+#    #+#             */
-/*   Updated: 2023/04/05 12:14:16 by mamaral-         ###   ########.fr       */
+/*   Updated: 2023/04/11 12:25:22 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -44,7 +45,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 size_t	ft_intlen(int *s);
-int 	ft_arrlen(int *a);
+int		ft_arrlen(int *a);
 
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
@@ -70,6 +71,15 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void*));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*));
-int ft_isspace(int c);
+int		ft_isspace(int c);
+
+// printf
+int		ft_printf(const char *fmt, ...);
+int		ft_putcharpf(char c);
+int		ft_putstrpf(char *s);
+int		ft_puthexpf(unsigned long n, char format);
+int		ft_putnbrpf(int n);
+int		ft_putunbrpf(unsigned int n);
+int		ft_putptrpf(unsigned long n);
 
 #endif
