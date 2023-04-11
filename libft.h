@@ -6,7 +6,7 @@
 /*   By: mamaral- <mamaral-@student.42porto.com     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:53:51 by mamaral-          #+#    #+#             */
-/*   Updated: 2023/04/11 12:25:22 by mamaral-         ###   ########.fr       */
+/*   Updated: 2023/04/11 14:10:16 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
+# include "printf.h"
 
 typedef struct s_list
 {
