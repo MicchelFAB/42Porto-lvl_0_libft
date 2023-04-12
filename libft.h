@@ -6,17 +6,18 @@
 /*   By: mamaral- <mamaral-@student.42porto.com     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:53:51 by mamaral-          #+#    #+#             */
-/*   Updated: 2023/04/11 14:10:16 by mamaral-         ###   ########.fr       */
+/*   Updated: 2023/04/12 12:48:09 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
-# include <stdlib.h>
 # include <unistd.h>
+# include <stdlib.h>
 # include <stdarg.h>
 # include "printf.h"
+# include "get_next_line.h"
 
 typedef struct s_list
 {

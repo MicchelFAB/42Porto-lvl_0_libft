@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/nfs/homes/mamaral-/Documents/42Cursus/Github/42Porto-lvl_0_libft/libft",
-      "program": "/nfs/homes/mamaral-/Documents/42Cursus/Github/42Porto-lvl_0_libft/libft/build/Debug/outDebug",
+      "cwd": "/nfs/homes/mamaral-/Documents/42Cursus/Github/42Porto-lvl_2_push_swap/libft",
+      "program": "/nfs/homes/mamaral-/Documents/42Cursus/Github/42Porto-lvl_2_push_swap/libft/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
