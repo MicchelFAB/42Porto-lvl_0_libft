@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/libft_bonus.webp" alt="Libft">
+</p>
+
 # The Libft Project
 
 The Libft project is a fundamental project in the 42 curriculum. It involves creating a library of useful functions that can be used in future projects. The goal of the Libft project is to recreate some standard C library functions, as well as implement additional functions that can be helpful in various programming tasks.
