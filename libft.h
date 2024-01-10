@@ -6,7 +6,7 @@
 /*   By: mamaral- <mamaral-@student.42porto.com     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:53:51 by mamaral-          #+#    #+#             */
-/*   Updated: 2023/04/12 12:48:09 by mamaral-         ###   ########.fr       */
+/*   Updated: 2024/01/10 13:36:28 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
-# include "printf.h"
-# include "get_next_line.h"
 
 typedef struct s_list
 {
@@ -74,14 +72,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void*));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*));
 int		ft_isspace(int c);
-
-// printf
-int		ft_printf(const char *fmt, ...);
-int		ft_putcharpf(char c);
-int		ft_putstrpf(char *s);
-int		ft_puthexpf(unsigned long n, char format);
-int		ft_putnbrpf(int n);
-int		ft_putunbrpf(unsigned int n);
-int		ft_putptrpf(unsigned long n);
 
 #endif

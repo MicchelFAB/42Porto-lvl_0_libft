@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mamaral- <mamaral-@student.42porto.com     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 09:37:36 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/17 14:45:35 by mamaral-         ###   ########.fr       */
+/*   Updated: 2024/01/10 13:33:46 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,4 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	new->content = content;
 	return (new);
-}	
+}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mamaral- <mamaral-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mamaral- <mamaral-@student.42porto.com     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 11:52:41 by mamaral-          #+#    #+#             */
-/*   Updated: 2022/11/15 16:07:36 by mamaral-         ###   ########.fr       */
+/*   Updated: 2024/01/10 13:39:16 by mamaral-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	x;
 
 	x = 0;
-	while (s[x] != '\0')
+	while (s[x])
 		x++;
 	return (x);
 }
