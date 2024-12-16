@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/libft_bonus.webp" alt="Libft"></br>
-  <img src="https://badge42.coday.fr/api/v2/cltzzvrp61460201p4yeptz0xk/project/2863106" alt="mamaral-'s 42 Libft Score" />
+  <img src="https://img.shields.io/badge/Libft-125%2F100-green?style=flat-square&color=green" alt="mamaral-'s 42 Libft Score" />
 </p>
 
 # The Libft Project
